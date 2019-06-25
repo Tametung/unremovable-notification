@@ -1,6 +1,7 @@
 package com.example.unremovablenotification
 
 import android.app.Application
+import com.example.testsdk.TestSdk
 
 class NotificationApplication : Application() {
 
@@ -8,7 +9,7 @@ class NotificationApplication : Application() {
         super.onCreate()
         instance = this
 
-//        TestSdk.init(this)
+        TestSdk.init(this)
     }
 
     companion object {

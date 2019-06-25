@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             startLoginActivity()
             return
         }
-        NotificationUtil.showNotification(this, loginInfo)
+        NotificationUtil.showNotification(applicationContext, loginInfo)
     }
 
     private fun startLoginActivity() {
